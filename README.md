@@ -26,5 +26,5 @@ ________________________________________________________________________________
 <ul>
     <li>Frontend: Laravel e Bootstrap</li>
     <li>Backend: Laravel </li>
-    <li>Database: xampp(phpmyadmin)</li>
+    <li>Database: MySQL</li>
 </ul>
