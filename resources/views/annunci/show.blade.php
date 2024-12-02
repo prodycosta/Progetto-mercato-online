@@ -156,8 +156,8 @@ nav span {
 
 
 <div class="container">
-    <div class="card small-card shadow"> <!-- Aggiunta della classe shadow -->
-        <!-- Mostra le immagini -->
+    <div class="card small-card shadow">
+
         @if($annuncio->images)
             <div class="mb-3">
                 @foreach ($annuncio->fotos as $foto)

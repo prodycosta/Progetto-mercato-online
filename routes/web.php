@@ -66,7 +66,7 @@ Route::delete('/annunci/{annuncio}', [AnnuncioController::class, 'destroy'])->na
 Route::get('/annunci/{id}/modifica', [AnnuncioController::class, 'edit'])->name('annunci.edit');
 Route::put('/annunci/{annuncio}', [AnnuncioController::class, 'update'])->name('annunci.update');
 });
-// routes/web.php
+
 Route::post('/delete-account', [AccountController::class, 'deleteAccount'])->name('delete.account');
 
 Route::get('/change-password', [AccountController::class, 'showChangePasswordForm'])->name('account.change-password');

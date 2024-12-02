@@ -2,10 +2,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Inserisci questo nel tag head -->
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Includi i tuoi stili CSS e altri elementi del tag head -->
+
     <title>Modifica Annuncio</title>
 
     <style>
@@ -80,7 +80,7 @@ body {
         h2 {
             color: #2a0a48;
             text-align: center;
-            margin-top: 20px; /* Aggiunto margine superiore */
+            margin-top: 20px;
         }
 
         form {
@@ -116,7 +116,7 @@ body {
             border-radius: 4px;
             cursor: pointer;
             display: block;
-            margin: 0 auto; /* Centra il bottone */
+            margin: 0 auto;
         }
 
         button:hover {
@@ -186,6 +186,6 @@ body {
     <button type="submit">Aggiorna</button>
 </form>
 
-    <!-- Includi i tuoi script JavaScript alla fine del body -->
+
 </body>
 </html>
