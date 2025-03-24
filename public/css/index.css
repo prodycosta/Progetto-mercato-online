@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #2a0a48;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 0 35px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+nav span {
+    font-size: 14px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+/*fine nav*/
+/*inizio input*/
+.container{
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+form {
+    position: static;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.container form input.form-control,
+.container form input#posizioneInput{
+
+    display: flex;
+    max-width: fit-content;
+    height: 7%;
+    margin-bottom: 25px;
+    font-size: 18px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    position: center;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0.621);
+
+}
+.container form input.form-control:hover,
+.container form input#posizioneInput:hover{
+    border-color: rgb(67, 0, 130);
+    box-shadow: 0 4px 6px rgba(67, 0, 130,0.5);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+
+button {
+    background-color:rgb(42, 10, 72);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 17%;
+    height: 45px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(67, 0, 130,0.5);
+    transition: background-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#suggerimenti {
+    border: 1px solid #ccc;
+    max-height: 50px;
+    max-width: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+      border: none;
+  }
+
+  #suggerimenti div {
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  #suggerimenti div:hover {
+    background-color: #f0f0f0;
+  }
+
+

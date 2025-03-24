@@ -1,0 +1,414 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #2a0a48;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 0 35px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+nav span {
+    font-size: 14px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.not-authenticated body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.not-authenticated #loginSection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.not-authenticated h3 {
+    color: #2a0a48;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.not-authenticated h5 {
+    color: #50306e;
+    margin-bottom: 15px;
+}
+
+.not-authenticated p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.not-authenticated button {
+    background-color: #2a0a48;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.not-authenticated button:hover {
+    background-color: #50306e;
+}
+
+
+
+
+
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20%;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+h3 {
+    margin-top: 8%;
+}
+
+.annunci-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.card {
+    width: 18%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+.card-body a {
+    margin-top: 20px;
+    padding: 0;
+    margin-right: 20px;
+    background: none;
+}
+
+.btn.btn-danger {
+    margin-top: 20px;
+    padding: 0;
+    margin-right: 20px;
+    color: #2a0a48;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.btn.btn-danger:hover {
+    color: red;
+}
+
+.edit-button {
+    margin-top: 20px;
+    padding: 0;
+    color: #2a0a48;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.1s;
+
+}
+
+.edit-button:hover{
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#userSection {
+    position: relative;
+}
+
+#dropdownBtn {
+    background-color: rgb(42, 10, 72);
+    width: 7%;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#dropdownBtn:hover {
+    background-color: rgb(79, 14, 140);
+}
+
+#dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(35, 1, 67, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#dropdownContent ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdownContent li {
+    text-align: center;
+}
+
+#dropdownContent button, #dropdownContent a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#dropdownContent button:hover, #dropdownContent a:hover {
+    background-color: #f5f5f5;
+}
+
+#deleteAccountBtn {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+#deleteAccountBtn:hover {
+    background-color: #bd2130;
+}
+
+#changePasswordBtn {
+    color: #fff;
+    background-color: #007bff;
+}
+
+#changePasswordBtn:hover {
+    background-color: #0056b3;
+}
+
+#dropdownContent #logoutBtn {
+    color: #333;
+    background-color: #107dea;
+}
+
+#dropdownContent #logoutBtn:hover {
+    background-color: #e2e6ea;
+}
+
+
+
+    #accountInfoSection {
+        margin-top: 20px;
+
+    }
+    h2, p {
+        margin-top: 10px;
+    }
+
+    #dropdownBtn {
+        margin-top: 7%;
+        margin-left: 1%;
+    }
+
+    .center-content {
+        text-align: center;
+        color: #2a0a48;
+    }
+
+    .center-content h2 {
+        margin: 0;
+        margin-bottom: 10px;
+        color: #50306e;
+    }
+
+    .center-content p {
+        margin: 0;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    #accountInfoSection {
+
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-top: -4%;
+        text-align: center;
+    }
+
+    .user-info {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .user-info h2 {
+        color: #2a0a48;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .info-item {
+        margin-bottom: 10px;
+    }
+
+    .info-item strong {
+        color: #50306e;
+    }
+
+    .username {
+        font-size: 40px;
+        font-style:normal;
+
+
+    }
+
+    .info-item p {
+        margin: 5px 0;
+        color: #333;
+    }
+
+
+    .btn {
+
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s;
+    }
+
+    .btn:hover i {
+        color: gray;
+    }
+
+    .edit-button:hover svg {
+        fill: #007bff;
+    }
+    .red-icon {
+        color: red;
+    }
+    .blue-icon {
+        color: #007bff;
+    }
+
+
+
+
